@@ -5,7 +5,7 @@ import sys
 pygame.init()
 
 # Constants
-WIDTH, HEIGHT = 800, 600
+WIDTH, HEIGHT = 800, 800
 FPS = 60
 
 # Colors
@@ -27,7 +27,7 @@ scissors_sound = pygame.mixer.Sound("scissors_collision.wav")
 # Create three instances of each image with random initial positions
 all_images = []
 image_rects = []
-for _ in range(30):
+for _ in range(40):
     image = random.choice([rock_image, paper_image, scissors_image])
     all_images.append(image)
     image_rect = image.get_rect()
